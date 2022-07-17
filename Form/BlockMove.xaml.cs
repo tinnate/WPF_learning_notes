@@ -21,7 +21,7 @@ public partial class BlockMove
     private void BlockMove_OnKeyDown(object sender, KeyEventArgs e)
     {
         // 获取GridColumn
-        var children = gridContent.Children;
+        var children = GridContent.Children;
         Border? currentBorder = null;
         foreach (UIElement child in children)
         {
@@ -32,10 +32,9 @@ public partial class BlockMove
         }
 
         // 获取坐标
-        var coordinate = currentBorder?.Name.Split("_");
-        var row = Convert.ToInt32(coordinate?[1]);
-        var column = Convert.ToInt32(coordinate?[2]);
-
+        var coordinate = currentBorder?.Name;
+        var row = Convert.ToInt32(coordinate?.Substring(1, 1));
+        var column = Convert.ToInt32(coordinate?.Substring(2, 1));
 
         switch (e.Key)
         {
@@ -64,7 +63,7 @@ public partial class BlockMove
             }
         }
 
-        var moveBorder = gridContent.FindName("b_" + row + "_" + column)!;
+        var moveBorder = GridContent.FindName("B" + row + column)!;
         currentBorder!.Background = new SolidColorBrush(Colors.Transparent);
         (moveBorder as Border)!.Background = new SolidColorBrush(Colors.White);
     }
@@ -80,7 +79,7 @@ public partial class BlockMove
         var row = random.Next(0, 2);
         var column = random.Next(0, 2);
 
-        var border = gridContent.FindName("b_" + row + "_" + column);
+        var border = GridContent.FindName("B" + row + column);
         (border as Border)!.Background = new SolidColorBrush(Colors.White);
     }
 }
