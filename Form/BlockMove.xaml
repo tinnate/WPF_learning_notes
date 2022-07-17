@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF_learning_notes.Form.BlockMove"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        Title="BlockMove" Height="450" Width="450"
+        KeyDown="BlockMove_OnKeyDown" Loaded="BlockMove_OnLoaded">
+    <Grid ShowGridLines="True" Background="Teal" Name="gridContent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Name="b_0_0" Background="Transparent" Grid.Row="0" Grid.Column="0"></Border>
+        <Border Name="b_0_1" Background="Transparent" Grid.Row="0" Grid.Column="1"></Border>
+        <Border Name="b_0_2" Background="Transparent" Grid.Row="0" Grid.Column="2"></Border>
+        <Border Name="b_1_0" Background="Transparent" Grid.Row="1" Grid.Column="0"></Border>
+        <Border Name="b_1_1" Background="Transparent" Grid.Row="1" Grid.Column="1"></Border>
+        <Border Name="b_1_2" Background="Transparent" Grid.Row="1" Grid.Column="2"></Border>
+        <Border Name="b_2_0" Background="Transparent" Grid.Row="2" Grid.Column="0"></Border>
+        <Border Name="b_2_1" Background="Transparent" Grid.Row="2" Grid.Column="1"></Border>
+        <Border Name="b_2_2" Background="Transparent" Grid.Row="2" Grid.Column="2"></Border>
+    </Grid>
+</Window>
