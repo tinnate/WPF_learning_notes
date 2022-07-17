@@ -5,9 +5,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         mc:Ignorable="d"
         Title="BlockMove" Height="450" Width="450"
+        WindowStartupLocation="CenterScreen"
         KeyDown="BlockMove_OnKeyDown" Loaded="BlockMove_OnLoaded">
     <Grid ShowGridLines="True" Background="Teal" Name="GridContent">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -16,15 +18,23 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Name="B00" Background="Transparent" Grid.Row="0" Grid.Column="0"></Border>
-        <Border Name="B01" Background="Transparent" Grid.Row="0" Grid.Column="1"></Border>
-        <Border Name="B02" Background="Transparent" Grid.Row="0" Grid.Column="2"></Border>
-        <Border Name="B10" Background="Transparent" Grid.Row="1" Grid.Column="0"></Border>
-        <Border Name="B11" Background="Transparent" Grid.Row="1" Grid.Column="1"></Border>
-        <Border Name="B12" Background="Transparent" Grid.Row="1" Grid.Column="2"></Border>
-        <Border Name="B20" Background="Transparent" Grid.Row="2" Grid.Column="0"></Border>
-        <Border Name="B21" Background="Transparent" Grid.Row="2" Grid.Column="1"></Border>
-        <Border Name="B22" Background="Transparent" Grid.Row="2" Grid.Column="2"></Border>
+        <Border Name="B00" Background="Transparent" Grid.Row="0" Grid.Column="0" />
+        <Border Name="B01" Background="Transparent" Grid.Row="0" Grid.Column="1" />
+        <Border Name="B02" Background="Transparent" Grid.Row="0" Grid.Column="2" />
+        <Border Name="B03" Background="Transparent" Grid.Row="0" Grid.Column="3" />
+        <Border Name="B10" Background="Transparent" Grid.Row="1" Grid.Column="0" />
+        <Border Name="B11" Background="Transparent" Grid.Row="1" Grid.Column="1" />
+        <Border Name="B12" Background="Transparent" Grid.Row="1" Grid.Column="2" />
+        <Border Name="B13" Background="Transparent" Grid.Row="1" Grid.Column="3" />
+        <Border Name="B20" Background="Transparent" Grid.Row="2" Grid.Column="0" />
+        <Border Name="B21" Background="Transparent" Grid.Row="2" Grid.Column="1" />
+        <Border Name="B22" Background="Transparent" Grid.Row="2" Grid.Column="2" />
+        <Border Name="B23" Background="Transparent" Grid.Row="2" Grid.Column="3" />
+        <Border Name="B30" Background="Transparent" Grid.Row="3" Grid.Column="0" />
+        <Border Name="B31" Background="Transparent" Grid.Row="3" Grid.Column="1" />
+        <Border Name="B32" Background="Transparent" Grid.Row="3" Grid.Column="2" />
+        <Border Name="B33" Background="Transparent" Grid.Row="3" Grid.Column="3" />
     </Grid>
 </Window>

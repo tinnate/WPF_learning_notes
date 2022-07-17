@@ -40,16 +40,20 @@ public partial class BlockMove
         {
             // 判断键盘方向
             case Key.Up:
+            case Key.W:
                 row = row - 1 >= 0 ? row - 1 : row;
                 break;
             case Key.Down:
-                row = row + 1 <= 2 ? row + 1 : row;
+            case Key.S:
+                row = row + 1 <= 3 ? row + 1 : row;
                 break;
             case Key.Left:
+            case Key.A:
                 column = column - 1 >= 0 ? column - 1 : column;
                 break;
             case Key.Right:
-                column = column + 1 <= 2 ? column + 1 : column;
+            case Key.D:
+                column = column + 1 <= 3 ? column + 1 : column;
                 break;
             case Key.Escape:
             {
@@ -76,8 +80,8 @@ public partial class BlockMove
     private void BlockMove_OnLoaded(object sender, RoutedEventArgs e)
     {
         var random = new Random();
-        var row = random.Next(0, 2);
-        var column = random.Next(0, 2);
+        var row = random.Next(0, 3);
+        var column = random.Next(0, 3);
 
         var border = GridContent.FindName("B" + row + column);
         (border as Border)!.Background = new SolidColorBrush(Colors.White);
