@@ -1,1 +1,2 @@
-﻿### WPF leaning notes
+﻿# WPF Learning Notes
+### WPF learning notes
