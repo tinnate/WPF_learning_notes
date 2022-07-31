@@ -9,16 +9,16 @@
         KeyDown="BlockMove_OnKeyDown" Loaded="BlockMove_OnLoaded">
     <Grid ShowGridLines="True" Background="Teal" Name="GridContent">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <Border Name="B00" Background="Transparent" Grid.Row="0" Grid.Column="0" />
         <Border Name="B01" Background="Transparent" Grid.Row="0" Grid.Column="1" />
